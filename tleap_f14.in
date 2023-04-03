@@ -1,0 +1,10 @@
+
+source leaprc.protein.ff14SB
+GLY = loadpdb point.pdb
+savepdb GLY GLY.pdb
+
+set GLY box {30.0 30.0 30.0} 
+saveamberparm GLY GLY_ff14.top    GLY_ff14.crd
+saveamberparm GLY GLY_ff14.prmtop GLY_ff14.rst7
+quit
+
